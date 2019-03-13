@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BEM</title>
+	<style>
+
+		.frm{
+			width: 60%;
+			height: 400px;
+			background: black;
+			color: white;
+			padding-left: 20px;
+		}
+
+		.frm__input{
+			width: 100px;
+			height: 50px;
+			font-size: 20px;
+			color: black;
+			margin: 30px 20px;
+		}
+
+		.frm__input--username{
+			background-color: gray;
+		}
+
+		.frm__input--password{
+			background-color: yellow;
+		}
+
+	</style>
+</head>
+	<body>
+	<!-- Block Element Modifier -->
+	<br>
+	<br>
+	<br>
+	<form  class="frm"> <!-- Block -->
+		<!-- Element -->
+		<label for="username">Username</label> <!-- Modifier -->
+		<input type="text" class="frm__input frm__input--username" id="username" value="username">	
+
+			<br>
+			<br>
+			<br>
+
+		<label for="password">Password</label> <!-- Modifier -->
+		<input type="text" class="frm__input frm__input--password" id="password" value="password">	
+	</form>
+
+	</body>
+</html>
